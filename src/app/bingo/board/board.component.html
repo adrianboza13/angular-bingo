@@ -1,0 +1,3 @@
+<div class="bingo-board">
+    <div *ngFor="let n of [] | range:100" [class.board-selected-bingo-number]="state.used[n]">{{n}}</div>
+</div>

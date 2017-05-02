@@ -1,0 +1,3 @@
+<div class="bingo-card" [class.is-deactivated-bingo-card]="!card.isActive">
+    <div *ngFor="let number of card.luckyNumbers" [class.card-selected-bingo-number]="state.used[number]">{{number}}</div>
+</div>

@@ -1,0 +1,22 @@
+.bingo-board {
+    border: 3px solid #88f;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    width: calc(40em + 8px * 41);
+}
+
+.bingo-board div {
+    border: 1px solid #000;
+    border-radius: 5px;
+    width: 2em;
+    height: 2em;
+    padding: .25em;
+    margin: 8px;
+    text-align: center;
+}
+
+.board-selected-bingo-number {
+    background-color: #8b8;
+    color: #fff;
+}

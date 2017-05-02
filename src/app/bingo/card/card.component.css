@@ -1,0 +1,25 @@
+.bingo-card {
+    border: 3px solid #f88;
+    border-radius: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 10px;
+}
+
+.bingo-card div {
+    border: 1px solid #000;
+    border-radius: 2px;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+}
+
+.is-deactivated-bingo-card, .is-deactivated-bingo-card div {
+    border-color: #ccc;
+    color: #ccc;
+}
+
+.card-selected-bingo-number {
+    background-color: #8b8;
+    color: #fff;
+}

@@ -4,15 +4,26 @@ import { FormsModule } from '@angular/forms';
 import { HttpModule } from '@angular/http';
 
 import { AppComponent } from './app.component';
+import { BingoBoardComponent } from './bingo/board/board.component';
+import { BingoCardComponent } from './bingo/card/card.component';
+import { BingoControlsComponent } from './bingo/controls/controls.component';
+import { BingoStatusComponent } from './bingo/status/status.component';
+
+import { RangePipe} from './lib/range.pipe';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    BingoBoardComponent,
+    BingoCardComponent,
+    BingoControlsComponent,
+    BingoStatusComponent,
+
+    RangePipe
   ],
   imports: [
     BrowserModule,
-    FormsModule,
-    HttpModule
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

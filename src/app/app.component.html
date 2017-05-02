@@ -1,3 +1,16 @@
-<h1>
-  {{title}}
-</h1>
+<div class="container bingo-app">
+    <div class="row">
+        <div class="col-md-12">
+            <bingo-board [glob]="glob"></bingo-board>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-10">
+            <bingo-card [cardId]="0" [glob]="glob"></bingo-card>
+            <bingo-status [glob]="glob"></bingo-status>
+        </div>
+        <div class="col-md-2">
+            <bingo-controls [glob]="glob"></bingo-controls>
+        </div>
+    </div>
+</div>
