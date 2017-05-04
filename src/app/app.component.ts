@@ -9,10 +9,8 @@ import { GlobalStorage } from './lib/globalStorage.service';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-    state;
-    bingoBalls = [];
-    cards = [];
-    glob;
+    state : BingoGameStateService;
+    glob : any;
 
     constructor() {
         let storage = new GlobalStorage();

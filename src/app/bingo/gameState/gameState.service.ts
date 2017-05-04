@@ -4,13 +4,13 @@ import { BingoCardService } from '../card/card.service';
 
 @Injectable()
 export class BingoGameStateService {
-    selectedNumbers = [];
+    selectedNumbers: number[] = [];
     used = {};
     players : BingoCardService[] = [];
     status = "Game is loading...";
-    winner = undefined;
+    winner : any = undefined;
 
-    removedPlayers = [];
+    removedPlayers : number[] = [];
 
     constructor() {
         this.updateStatus("Press reset to start a new game");
@@ -124,7 +124,7 @@ export class BingoGameStateService {
         this.selectedNumbers.push(n);
     }
 
-    private updateStatus(status) {
+    private updateStatus(status : string) {
         this.status = "Active players: " + this.getActivePlayerCount() + " - " + status;
     }
 }

@@ -4,7 +4,7 @@ import { BingoGameStateService } from '../gameState/gameState.service';
 
 @Injectable()
 export class BingoCardService {
-    luckyNumbers = [];
+    luckyNumbers: number[] = [];
     isActive = false;
     isReady = false;
     hasWon = false;
@@ -94,7 +94,7 @@ export class BingoCardService {
         return i === 5;
     }
 
-    private checkDiagonal(leftTop: boolean, numbers) {
+    private checkDiagonal(leftTop: boolean, numbers: number[]) {
         let i = 0;
         for (;i < 5; i++) {
             if (numbers.indexOf(this.getNumberAt(
@@ -107,7 +107,7 @@ export class BingoCardService {
         return i === 5;
     }
 
-    private checkVertical(pos: number, numbers) {
+    private checkVertical(pos: number, numbers: number[]) {
         let i = 0;
         for (;i < 5; i++) {
             if (numbers.indexOf(this.getNumberAt(i, pos)) === -1) {

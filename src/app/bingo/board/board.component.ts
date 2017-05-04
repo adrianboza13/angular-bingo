@@ -11,7 +11,7 @@ import { GlobalStorage } from '../../lib/globalStorage.service';
 export class BingoBoardComponent implements OnInit {
     state: BingoGameStateService;
 
-    @Input() glob: Number;
+    @Input() glob: number;
 
     constructor() {
     }
